@@ -1,0 +1,41 @@
+type Player {
+  playerId: ID
+  Name: String
+  G: Float
+  AB: Float
+  R: Float
+  H: Float
+  SINGLE: Float
+  DOUBLE: Float
+  TRIPLE: Float
+  HR: Float
+  RBI: Float
+  AVG: Float
+  SLG: Float
+  BB: Float
+  id: Float
+  TB: Float
+  OBP: Float
+  RUNC: Float
+  OPS: Float
+  ISO: Float
+  GAME_LIMIT: Boolean
+}
+
+type Query {
+  # Get all stats
+  stats: [Stats]
+
+  # Get specific segment stats
+  stat(id: ID!): Stats
+}
+
+# Different stat groupings
+type Stats {
+  name: String
+  id: String
+  type: String
+  url: String
+  players: [Player]
+}
+

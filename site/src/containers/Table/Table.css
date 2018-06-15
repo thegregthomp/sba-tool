@@ -1,0 +1,19 @@
+.Table .rt-th {
+  outline: none !important; }
+
+.Table .rt-td {
+  text-align: center; }
+
+.white {
+  background: #fff; }
+
+.whiteBar {
+  background-color: white !important;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.Searcher {
+  min-width: 250px;
+  z-index: 999; }
